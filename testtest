@@ -1,0 +1,686 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Collections;
+using System.IO;
+
+namespace JoshuaMcMahan_Test1
+{
+    class FileData
+    {
+        //Create a dictionary and a streamreader for later use
+        Dictionary<char, int> CharDic = new Dictionary<char, int> { };
+        StreamReader reader;
+
+        //Constructor
+        public FileData(string TEXT_FILE)
+        {
+            reader = new StreamReader(TEXT_FILE);
+        }
+
+        //KLooks through the file
+        public void Analyze()
+        {
+            //Change the strign to lower
+            string lowerText;
+            lowerText = reader.ReadToEnd();
+            lowerText = lowerText.ToLower();
+
+            //Loop for Chars in a try
+            try
+            {
+                foreach (char c in lowerText)
+                {
+                    switch (c)
+                    {
+                        //Below is all the Switch Statement for this Switch, its long, the Exception thrown happens before the first letter?
+                        case 'a':
+                            {
+                                if (CharDic.ContainsKey(c))
+                                {
+                                    int PrevNum = CharDic[c];
+                                    CharDic.Remove(c);
+                                    CharDic.Add(c, (PrevNum + 1));
+                                }
+                                else
+                                {
+                                    CharDic.Add(c, 1);
+                                }
+                                break;
+                            }
+                        case 'b':
+                            {
+                                if (CharDic.ContainsKey(c))
+                                {
+                                    int PrevNum = CharDic[c];
+                                    CharDic.Remove(c);
+                                    CharDic.Add(c, (PrevNum + 1));
+                                }
+                                else
+                                {
+                                    CharDic.Add(c, (1));
+                                }
+                                break;
+                            }
+                        case 'c':
+                            {
+                                if (CharDic.ContainsKey(c))
+                                {
+                                    CharDic.Remove(c);
+                                    CharDic.Add(c, (CharDic[c] + 1));
+                                }
+                                else
+                                {
+                                    CharDic.Add(c, (1));
+                                }
+                                break;
+                            }
+                        case 'd':
+                            {
+                                if (CharDic.ContainsKey(c))
+                                {
+                                    int PrevNum = CharDic[c];
+                                    CharDic.Remove(c);
+                                    CharDic.Add(c, (PrevNum + 1));
+                                }
+                                else
+                                {
+                                    CharDic.Add(c, (1));
+                                }
+                                break;
+                            }
+                        case 'e':
+                            {
+                                if (CharDic.ContainsKey(c))
+                                {
+                                    int PrevNum = CharDic[c];
+                                    CharDic.Remove(c);
+                                    CharDic.Add(c, (PrevNum + 1));
+                                }
+                                else
+                                {
+                                    CharDic.Add(c, (1));
+                                }
+                                break;
+                            }
+                        case 'f':
+                            {
+                                if (CharDic.ContainsKey(c))
+                                {
+                                    int PrevNum = CharDic[c];
+                                    CharDic.Remove(c);
+                                    CharDic.Add(c, (PrevNum + 1));
+                                }
+                                else
+                                {
+                                    CharDic.Add(c, (1));
+                                }
+                                break;
+                            }
+                        case 'g':
+                            {
+                                if (CharDic.ContainsKey(c))
+                                {
+                                    int PrevNum = CharDic[c];
+                                    CharDic.Remove(c);
+                                    CharDic.Add(c, (PrevNum + 1));
+                                }
+                                else
+                                {
+                                    CharDic.Add(c, (1));
+                                }
+                                break;
+                            }
+                        case 'h':
+                            {
+                                if (CharDic.ContainsKey(c))
+                                {
+                                    int PrevNum = CharDic[c];
+                                    CharDic.Remove(c);
+                                    CharDic.Add(c, (PrevNum + 1));
+                                }
+                                else
+                                {
+                                    CharDic.Add(c, (1));
+                                }
+                                break;
+                            }
+                        case 'i':
+                            {
+                                if (CharDic.ContainsKey(c))
+                                {
+                                    int PrevNum = CharDic[c];
+                                    CharDic.Remove(c);
+                                    CharDic.Add(c, (PrevNum + 1));
+                                }
+                                else
+                                {
+                                    CharDic.Add(c, (1));
+                                }
+                                break;
+                            }
+                        case 'j':
+                            {
+                                if (CharDic.ContainsKey(c))
+                                {
+                                    int PrevNum = CharDic[c];
+                                    CharDic.Remove(c);
+                                    CharDic.Add(c, (PrevNum + 1));
+                                }
+                                else
+                                {
+                                    CharDic.Add(c, (1));
+                                }
+                                break;
+                            }
+                        case 'k':
+                            {
+                                if (CharDic.ContainsKey(c))
+                                {
+                                    int PrevNum = CharDic[c];
+                                    CharDic.Remove(c);
+                                    CharDic.Add(c, (PrevNum + 1));
+                                }
+                                else
+                                {
+                                    CharDic.Add(c, (1));
+                                }
+                                break;
+                            }
+                        case 'l':
+                            {
+                                if (CharDic.ContainsKey(c))
+                                {
+                                    int PrevNum = CharDic[c];
+                                    CharDic.Remove(c);
+                                    CharDic.Add(c, (PrevNum + 1));
+                                }
+                                else
+                                {
+                                    CharDic.Add(c, (1));
+                                }
+                                break;
+                            }
+                        case 'm':
+                            {
+                                if (CharDic.ContainsKey(c))
+                                {
+                                    int PrevNum = CharDic[c];
+                                    CharDic.Remove(c);
+                                    CharDic.Add(c, (PrevNum + 1));
+                                }
+                                else
+                                {
+                                    CharDic.Add(c, (1));
+                                }
+                                break;
+                            }
+                        case 'n':
+                            {
+                                if (CharDic.ContainsKey(c))
+                                {
+                                    int PrevNum = CharDic[c];
+                                    CharDic.Remove(c);
+                                    CharDic.Add(c, (PrevNum + 1));
+                                }
+                                else
+                                {
+                                    CharDic.Add(c, (1));
+                                }
+                                break;
+                            }
+                        case 'o':
+                            {
+                                if (CharDic.ContainsKey(c))
+                                {
+                                    int PrevNum = CharDic[c];
+                                    CharDic.Remove(c);
+                                    CharDic.Add(c, (PrevNum + 1));
+                                }
+                                else
+                                {
+                                    CharDic.Add(c, (1));
+                                }
+                                break;
+                            }
+                        case 'p':
+                            {
+                                if (CharDic.ContainsKey(c))
+                                {
+                                    int PrevNum = CharDic[c];
+                                    CharDic.Remove(c);
+                                    CharDic.Add(c, (PrevNum + 1));
+                                }
+                                else
+                                {
+                                    CharDic.Add(c, (1));
+                                }
+                                break;
+                            }
+                        case 'q':
+                            {
+                                if (CharDic.ContainsKey(c))
+                                {
+                                    int PrevNum = CharDic[c];
+                                    CharDic.Remove(c);
+                                    CharDic.Add(c, (PrevNum + 1));
+                                }
+                                else
+                                {
+                                    CharDic.Add(c, (1));
+                                }
+                                break;
+                            }
+                        case 'r':
+                            {
+                                if (CharDic.ContainsKey(c))
+                                {
+                                    int PrevNum = CharDic[c];
+                                    CharDic.Remove(c);
+                                    CharDic.Add(c, (PrevNum + 1));
+                                }
+                                else
+                                {
+                                    CharDic.Add(c, (1));
+                                }
+                                break;
+                            }
+                        case 's':
+                            {
+                                if (CharDic.ContainsKey(c))
+                                {
+                                    int PrevNum = CharDic[c];
+                                    CharDic.Remove(c);
+                                    CharDic.Add(c, (PrevNum + 1));
+                                }
+                                else
+                                {
+                                    CharDic.Add(c, (1));
+                                }
+                                break;
+                            }
+                        case 't':
+                            {
+                                if (CharDic.ContainsKey(c))
+                                {
+                                    int PrevNum = CharDic[c];
+                                    CharDic.Remove(c);
+                                    CharDic.Add(c, (PrevNum + 1));
+                                }
+                                else
+                                {
+                                    CharDic.Add(c, (1));
+                                }
+                                break;
+                            }
+                        case 'u':
+                            {
+                                if (CharDic.ContainsKey(c))
+                                {
+                                    int PrevNum = CharDic[c];
+                                    CharDic.Remove(c);
+                                    CharDic.Add(c, (PrevNum + 1));
+                                }
+                                else
+                                {
+                                    CharDic.Add(c, (1));
+                                }
+                                break;
+                            }
+                        case 'v':
+                            {
+                                if (CharDic.ContainsKey(c))
+                                {
+                                    int PrevNum = CharDic[c];
+                                    CharDic.Remove(c);
+                                    CharDic.Add(c, (PrevNum + 1));
+                                }
+                                else
+                                {
+                                    CharDic.Add(c, (1));
+                                }
+                                break;
+                            }
+                        case 'w':
+                            {
+                                if (CharDic.ContainsKey(c))
+                                {
+                                    int PrevNum = CharDic[c];
+                                    CharDic.Remove(c);
+                                    CharDic.Add(c, (PrevNum + 1));
+                                }
+                                else
+                                {
+                                    CharDic.Add(c, (1));
+                                }
+                                break;
+                            }
+                        case 'x':
+                            {
+                                if (CharDic.ContainsKey(c))
+                                {
+                                    int PrevNum = CharDic[c];
+                                    CharDic.Remove(c);
+                                    CharDic.Add(c, (PrevNum + 1));
+                                }
+                                else
+                                {
+                                    CharDic.Add(c, (1));
+                                }
+                                break;
+                            }
+                        case 'y':
+                            {
+                                if (CharDic.ContainsKey(c))
+                                {
+                                    int PrevNum = CharDic[c];
+                                    CharDic.Remove(c);
+                                    CharDic.Add(c, (PrevNum + 1));
+                                }
+                                else
+                                {
+                                    CharDic.Add(c, (1));
+                                }
+                                break;
+                            }
+                        case 'z':
+                            {
+                                if (CharDic.ContainsKey(c))
+                                {
+                                    int PrevNum = CharDic[c];
+                                    CharDic.Remove(c);
+                                    CharDic.Add(c, (PrevNum + 1));
+                                }
+                                else
+                                {
+                                    CharDic.Add(c, (1));
+                                }
+                                break;
+                            }
+                        case ' ':
+                            {
+                                if (CharDic.ContainsKey(c))
+                                {
+                                    int PrevNum = CharDic[c];
+                                    CharDic.Remove(c);
+                                    CharDic.Add(c, (PrevNum + 1));
+                                }
+                                else
+                                {
+                                    CharDic.Add(c, (1));
+                                }
+                                break;
+                            }
+                        case '0':
+                            {
+                                if (CharDic.ContainsKey(c))
+                                {
+                                    int PrevNum = CharDic[c];
+                                    CharDic.Remove(c);
+                                    CharDic.Add(c, (PrevNum + 1));
+                                }
+                                else
+                                {
+                                    CharDic.Add(c, (1));
+                                }
+                                break;
+                            }
+                        case '1':
+                            {
+                                if (CharDic.ContainsKey(c))
+                                {
+                                    int PrevNum = CharDic[c];
+                                    CharDic.Remove(c);
+                                    CharDic.Add(c, (PrevNum + 1));
+                                }
+                                else
+                                {
+                                    CharDic.Add(c, (1));
+                                }
+                                break;
+                            }
+                        case '2':
+                            {
+                                if (CharDic.ContainsKey(c))
+                                {
+                                    int PrevNum = CharDic[c];
+                                    CharDic.Remove(c);
+                                    CharDic.Add(c, (PrevNum + 1));
+                                }
+                                else
+                                {
+                                    CharDic.Add(c, (1));
+                                }
+                                break;
+                            }
+                        case '3':
+                            {
+                                if (CharDic.ContainsKey(c))
+                                {
+                                    int PrevNum = CharDic[c];
+                                    CharDic.Remove(c);
+                                    CharDic.Add(c, (PrevNum + 1));
+                                }
+                                else
+                                {
+                                    CharDic.Add(c, (1));
+                                }
+                                break;
+                            }
+                        case '4':
+                            {
+                                if (CharDic.ContainsKey(c))
+                                {
+                                    int PrevNum = CharDic[c];
+                                    CharDic.Remove(c);
+                                    CharDic.Add(c, (PrevNum + 1));
+                                }
+                                else
+                                {
+                                    CharDic.Add(c, (1));
+                                }
+                                break;
+                            }
+                        case '5':
+                            {
+                                if (CharDic.ContainsKey(c))
+                                {
+                                    int PrevNum = CharDic[c];
+                                    CharDic.Remove(c);
+                                    CharDic.Add(c, (PrevNum + 1));
+                                }
+                                else
+                                {
+                                    CharDic.Add(c, (1));
+                                }
+                                break;
+                            }
+                        case '6':
+                            {
+                                if (CharDic.ContainsKey(c))
+                                {
+                                    int PrevNum = CharDic[c];
+                                    CharDic.Remove(c);
+                                    CharDic.Add(c, (PrevNum + 1));
+                                }
+                                else
+                                {
+                                    CharDic.Add(c, (1));
+                                }
+                                break;
+                            }
+                        case '7':
+                            {
+                                if (CharDic.ContainsKey(c))
+                                {
+                                    int PrevNum = CharDic[c];
+                                    CharDic.Remove(c);
+                                    CharDic.Add(c, (PrevNum + 1));
+                                }
+                                else
+                                {
+                                    CharDic.Add(c, (1));
+                                }
+                                break;
+                            }
+                        case '8':
+                            {
+                                if (CharDic.ContainsKey(c))
+                                {
+                                    int PrevNum = CharDic[c];
+                                    CharDic.Remove(c);
+                                    CharDic.Add(c, (PrevNum + 1));
+                                }
+                                else
+                                {
+                                    CharDic.Add(c, (1));
+                                }
+                                break;
+                            }
+                        case '9':
+                            {
+                                if (CharDic.ContainsKey(c))
+                                {
+                                    int PrevNum = CharDic[c];
+                                    CharDic.Remove(c);
+                                    CharDic.Add(c, (PrevNum + 1));
+                                }
+                                else
+                                {
+                                    CharDic.Add(c, (1));
+                                }
+                                break;
+                            }
+                        case '.':
+                            {
+                                if (CharDic.ContainsKey(c))
+                                {
+                                    int PrevNum = CharDic[c];
+                                    CharDic.Remove(c);
+                                    CharDic.Add(c, (PrevNum + 1));
+                                }
+                                else
+                                {
+                                    CharDic.Add(c, (1));
+                                }
+                                break;
+                            }
+                        case ',':
+                            {
+                                if (CharDic.ContainsKey(c))
+                                {
+                                    int PrevNum = CharDic[c];
+                                    CharDic.Remove(c);
+                                    CharDic.Add(c, (PrevNum + 1));
+                                }
+                                else
+                                {
+                                    CharDic.Add(c, (1));
+                                }
+                                break;
+                            }
+                        case '!':
+                            {
+                                if (CharDic.ContainsKey(c))
+                                {
+                                    int PrevNum = CharDic[c];
+                                    CharDic.Remove(c);
+                                    CharDic.Add(c, (PrevNum + 1));
+                                }
+                                else
+                                {
+                                    CharDic.Add(c, (1));
+                                }
+                                break;
+                            }
+                        case '?':
+                            {
+                                if (CharDic.ContainsKey(c))
+                                {
+                                    int PrevNum = CharDic[c];
+                                    CharDic.Remove(c);
+                                    CharDic.Add(c, (PrevNum + 1));
+                                }
+                                else
+                                {
+                                    CharDic.Add(c, (1));
+                                }
+                                break;
+                            }
+                        case '&':
+                            {
+                                if (CharDic.ContainsKey(c))
+                                {
+                                    int PrevNum = CharDic[c];
+                                    CharDic.Remove(c);
+                                    CharDic.Add(c, (PrevNum + 1));
+                                }
+                                else
+                                {
+                                    CharDic.Add(c, (1));
+                                }
+                                break;
+                            }
+                        case ';':
+                            {
+                                if (CharDic.ContainsKey(c))
+                                {
+                                    int PrevNum = CharDic[c];
+                                    CharDic.Remove(c);
+                                    CharDic.Add(c, (PrevNum + 1));
+                                }
+                                else
+                                {
+                                    CharDic.Add(c, (1));
+                                }
+                                break;
+                            }
+                        case ':':
+                            {
+                                if (CharDic.ContainsKey(c))
+                                {
+                                    int PrevNum = CharDic[c];
+                                    CharDic.Remove(c);
+                                    CharDic.Add(c, (PrevNum + 1));
+                                }
+                                else
+                                {
+                                    CharDic.Add(c, (1));
+                                }
+                                break;
+                            }
+                        default:
+                            {
+                                break;
+                            }
+                    }
+                    reader.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An Exception occured: " + ex.Message);
+                reader.Close();
+            }
+        }
+
+        //Displays the contents of CharDic
+        public void Display()
+        {
+            foreach(char c in CharDic.Keys)
+            {
+
+                if (CharDic.ContainsKey(c) && CharDic[c] != ' ')
+                {
+                    Console.WriteLine(c + ": " + CharDic[c]);
+                }
+                if (CharDic[c] == ' ')
+                {
+                    Console.WriteLine("Space: " + CharDic[c]);
+                }
+            }
+        }
+    }
+}
