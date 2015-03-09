@@ -10,6 +10,7 @@ namespace JoshuaMcMahan_Test1
 {
     class FileData
     {
+        //wow alia is cool
         //Create a dictionary and a streamreader for later use
         Dictionary<char, int> CharDic = new Dictionary<char, int> { };
         StreamReader reader;
